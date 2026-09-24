@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>About Me</title>
-        <style>
+        <style>/
             body {
                 font-family: Arial, sans-serif;
                 background-color: #f0fdf4; 
@@ -54,9 +54,11 @@
                 color: #047857;
                 margin-top: 0;
             }
+            img {
                 border-radius: 10px; 
                 border: 3px solid #059669;
             }
+            /* Warna link pada teks */
             a {
                 color: #059669;
                 font-weight: bold;
@@ -64,9 +66,40 @@
             a:hover {
                 color: #064e3b;
             }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+                color: #333;
+            table, th, td {
+                border: 1px solid #888;
+            }
+            th, td {
+                padding: 12px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2; 
+                font-weight: bold;
+                color: #333;
+            }
+            tr {
+                background-color: #ffffff;
+            footer {
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+                background-color: #059669;
+                color: white;
+                padding: 15px;
+                border-radius: 8px;
+                margin-top: 20px;
+                font-size: 0.9em;
+            }
         </style>
     </head>
     <body>
+        <!--HEADER-->
         <header>
             <h1>About Me:)</h1>
             <p>Welcome to my personal profile page</p>
@@ -79,10 +112,10 @@
             <a href="#contact">Contact</a>
         </nav>
         <hr>
-
+        <!--MAIN-->
         <main>
             <section id="profile">
-                <h2>My Profile</h2>
+                <h2>Student Profile</h2>
                 <img
                 src="https://i.postimg.cc/DwwsP3Hj/20260724-104238.jpg"
                 alt="My Profile Photo"
@@ -122,7 +155,31 @@
             <br>
             <section id="academic">
                 <h2>Academic</h2>
-                <p>I am a student at the Faculty of Information Technology, currently focusing on building fundamental skills in web development.</p>
+                <p>During my studies, I have a target grade for each semester. Here are my target GPA for this semester and next semester.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Semester</th>
+                            <th>Academic Year</th>
+                            <th>Target GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>This Semester</td>
+                            <td>2026/2027</td>
+                            <td>3.90</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Next Semester</td>
+                            <td>2027/2028</td>
+                            <td>4.00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <br>
             <section id="contact">
@@ -130,5 +187,8 @@
                 <p>If you'd like to get in touch, please feel free to email me at <a href="mailto:ellenserumena@gmail.com">ellenserumena@gmail.com</a>.</p>
             </section>
         </main>
+        <footer>
+            <p>&copy; 2026 Ellen Gabriela Serumena. All rights reserved.</p>
+        </footer>
     </body>
 </html>
